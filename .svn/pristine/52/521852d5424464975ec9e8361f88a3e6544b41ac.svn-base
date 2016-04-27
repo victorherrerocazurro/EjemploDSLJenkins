@@ -1,0 +1,10 @@
+#release configuration
+#Tue May 13 11:48:42 CEST 2014
+preparationGoals=clean install
+scm.commentPrefix=[maven-release-plugin] 
+scm.username=UserNegocio
+remoteTagging=true
+scm.tagBase=https\://Victor-Portatil/svn/ParejasNegocio/tags
+scm.password=UserNegocio
+completedPhase=check-poms
+scm.url=scm\:svn\:https\://localhost/svn/ParejasNegocio/trunk

@@ -1,0 +1,20 @@
+#release configuration
+#Tue May 13 14:00:56 CEST 2014
+scm.commentPrefix=[maven-release-plugin] 
+project.dev.parejas\:negocio=0.0.2-SNAPSHOT
+scm.password=UserNegocio
+pushChanges=true
+project.scm.parejas\:negocio.connection=scm\:svn\:https\://Victor-Portatil/svn/ParejasNegocio/trunk
+scm.tag=negocio-0.0.1
+scm.tagBase=https\://Victor-Portatil/svn/ParejasNegocio/tags
+remoteTagging=true
+scm.url=scm\:svn\:https\://Victor-Portatil/svn/ParejasNegocio/trunk
+scm.tagNameFormat=@{project.artifactId}-@{project.version}
+preparationGoals=clean install
+project.scm.parejas\:negocio.developerConnection=scm\:svn\:https\://Victor-Portatil/svn/ParejasNegocio/trunk
+project.scm.parejas\:negocio.tag=HEAD
+scm.username=UserNegocio
+exec.snapshotReleasePluginAllowed=false
+project.rel.parejas\:negocio=0.0.1
+project.scm.parejas\:negocio.url=https\://Victor-Portatil/svn/ParejasNegocio/trunk
+completedPhase=end-release
