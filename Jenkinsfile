@@ -1,20 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('Init'){
-      steps {
-        mvnHome = tool 'M3'
-      }
-    }
     stage('Build') {
       steps {
         echo 'Contruyendo el proyecto'
-        bat(/"${mvnHome}\bin\mvn" compile/)
+        withMaven(maven : 'M3') {
+          sh 'mvn compile'
+        }
       }
     }
     stage('Test') {
       steps {
-        bat(/"${mvnHome}\bin\mvn" test/)
+        withMaven(maven : 'M3') {
+          sh 'mvn test'
+        }
       }
     }
     stage('Publish') {
